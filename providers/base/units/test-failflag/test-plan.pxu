@@ -1,0 +1,28 @@
+id: manifest-fail-on-resource-full
+unit: test plan
+_name: Manifest and fail-on-resource tests
+_description:
+    Manifest and fail-on-resource tests
+include:
+nested_part:
+ com.canonical.certification::manifest-fail-on-resource-manual
+ com.canonical.certification::manifest-fail-on-resource-automated
+
+id: manifest-fail-on-resource-manual
+unit: test plan
+_name: Manifest and fail-on-resource (Manual)
+_description:
+ Manifest and fail-on-resource (Manual)
+include:
+
+id: manifest-fail-on-resource-automated
+unit: test plan
+_name: Manifest and fail-on-resource (Automated)
+_description:
+    Manifest and fail-on-resource (Automated)
+include:
+    test/manifest-check
+    test/fail-on-resource-1
+    test/fail-on-resource-2
+bootstrap_include:
+    com.canonical.certification::module

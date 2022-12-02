@@ -1,0 +1,35 @@
+id: test/manifest-check
+_summary: Check the value of 'test_only' in manifest
+imports: from com.canonical.plainbox import manifest
+requires:
+    manifest.test_only == 'True'
+plugin: shell
+flags: simple
+command:
+    echo "test_only is yes"
+
+id: test/fail-on-resource-1
+_summary: Scenario-1. Check this job should be skipped if test_only is no
+depends: test/manifest-check
+imports: from com.canonical.certification import module
+requires:
+    module.name == 'hid'
+plugin: shell
+flags: simple fail-on-resource
+_description:
+    The 'hid' is a real module and exists in OS. So this module can be found in checkbox resource.
+command:
+    echo "hid module is loaded"
+
+id: test/fail-on-resource-2
+_summary: Scenario-2. Check this job should be skipped if test_only is no
+depends: test/manifest-check
+imports: from com.canonical.certification import module
+requires:
+    module.name == 'random123'
+plugin: shell
+flags: simple fail-on-resource
+_description:
+    The 'random123' is a fake module. So this module cannot be found in checkbox resource.
+command:
+    echo "random123 module is loaded"

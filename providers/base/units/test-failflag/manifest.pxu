@@ -1,0 +1,4 @@
+unit: manifest entry
+id: test_only
+_name: Test manifest and fail-on-resources
+value-type: bool
