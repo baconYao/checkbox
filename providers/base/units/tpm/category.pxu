@@ -1,9 +1,0 @@
-# Copyright 2015 Canonical Ltd.
-# All rights reserved.
-#
-# Written by:
-#   Zygmunt Krynicki <zygmunt.krynicki@canonical.com>
-
-unit: category
-id: tpm
-_name: TPM (Trusted Platform Module)

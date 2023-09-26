@@ -1,7 +1,0 @@
-unit: packaging meta-data
-os-id: debian
-Depends: jq
-
-unit: packaging meta-data
-os-id: debian
-Depends: libjson-xs-perl

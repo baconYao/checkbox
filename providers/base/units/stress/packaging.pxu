@@ -1,4 +1,0 @@
-# The stress/cpu_stress_ng_test job requires stress-ng package
-unit: packaging meta-data
-os-id: debian
-Depends: stress-ng (>= 0.04)

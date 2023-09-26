@@ -1,7 +1,0 @@
-id: 6lowpan-automated
-unit: test plan
-_name: Automated 6LoWPAN tests
-_description: Automated 6LoWPAN tests for Snappy Ubuntu Core devices
-include:
-    6lowpan/kconfig
-

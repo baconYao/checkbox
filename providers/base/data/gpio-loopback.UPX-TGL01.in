@@ -1,4 +1,0 @@
-# GPIO IDs as presented by sysfs. See:
-# https://github.com/up-board/up-community/wiki/Pinout_UPXi11
-# (in this case, this means connecting GPIO pins 13 and 15 together)
-22,27

@@ -1,4 +1,0 @@
-unit: manifest entry
-id: has_eeprom
-_name: Does device supported EEPROM?
-value-type: bool

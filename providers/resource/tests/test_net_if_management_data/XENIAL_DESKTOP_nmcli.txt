@@ -1,3 +1,0 @@
-eth0:connected
-wlan0:disconnected
-lo:unmanaged
