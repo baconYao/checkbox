@@ -1,2 +1,0 @@
-#!/bin/sh
-checkbox-cli list-bootstrapped com.canonical.certification::client-cert-desktop-20-04-automated
