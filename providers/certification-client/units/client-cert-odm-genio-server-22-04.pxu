@@ -70,6 +70,7 @@ exclude:
     mediacard/msp-.*
     mediacard/xd-.*
     mediacard/sd-.*
+    rtc/battery
     ethernet/wol_S5_.*
 
 id: client-cert-odm-genio-server-22-04-automated
