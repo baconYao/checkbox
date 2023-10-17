@@ -44,8 +44,6 @@ nested_part:
     usb-c-cert-full # no manual only
     usb-c-manual
     wireless-cert-manual
-    # CE-OEM
-    com.canonical.qa.ceoem::ce-oem-cpu-manual
     # Genio specific test plans
     genio-audio-manual
     genio-display-manual
@@ -71,8 +69,6 @@ nested_part:
     # after-suspend-wireless-cert-full # auto only
     after-suspend-usb-c-manual
     info-attachment-cert-full
-    # CE-OEM after suspend
-    com.canonical.qa.ceoem::after-suspend-ce-oem-cpu-manual
     # Genio specific test plans after suspend 
     after-suspend-genio-audio-manual
     after-suspend-genio-display-manual
@@ -149,8 +145,6 @@ nested_part:
     usb-cert-automated
     usb3-cert-automated
     wireless-cert-automated
-    # CE-OEM
-    com.canonical.qa.ceoem::ce-oem-cpu-automated
     # Genio specific test plans
     genio-thermal-automated
     genio-boot-automated
@@ -163,8 +157,6 @@ nested_part:
     after-suspend-reference-cert-full
     after-suspend-graphics-integrated-gpu-cert-automated
     after-suspend-wireless-cert-automated
-    # CE-OEM after suspend
-    com.canonical.qa.ceoem::after-suspend-ce-oem-cpu-automated
     # Genio specific test plans after suspend
     after-suspend-genio-graphic-automated
     after-suspend-genio-boot-automated
@@ -194,3 +186,4 @@ exclude:
     suspend/1_suspend_after_switch_to_card_.*
     graphics/1_gl_support_.*
     after-suspend-graphics/1_gl_support_.*
+    memory/memory_stress_ng

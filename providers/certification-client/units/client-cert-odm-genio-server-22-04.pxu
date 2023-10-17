@@ -38,8 +38,6 @@ nested_part:
     usb3-manual
     wwan-manual
     i2c-manual
-    # CE-OEM test plans
-    com.canonical.qa.ceoem::ce-oem-cpu-manual
     # Genio specific test plans
     genio-audio-manual
     genio-display-manual
@@ -54,8 +52,6 @@ nested_part:
     after-suspend-ethernet-manual
     after-suspend-wwan-manual
     after-suspend-usb-c-manual
-    # CE-OEM test plans after suspend
-    com.canonical.qa.ceoem::after-suspend-ce-oem-cpu-manual
     # Genio specific test plans after suspend
     after-suspend-genio-audio-manual
     after-suspend-genio-display-manual
@@ -122,8 +118,6 @@ nested_part:
     snappy-snap-automated
     wireless-automated
     wireless-wifi-master-mode-auto
-    # CE-OEM test plans
-    com.canonical.qa.ceoem::ce-oem-cpu-automated
     # Genio specific test plans
     genio-thermal-automated
     genio-boot-automated
@@ -139,8 +133,6 @@ nested_part:
     after-suspend-wwan-automated
     warm-boot-stress-test
     cold-boot-stress-test
-    # CE-OEM test plans after suspend
-    com.canonical.qa.ceoem::after-suspend-ce-oem-cpu-automated
     # Genio specific test plans after suspend
     after-suspend-genio-boot-automated
     after-suspend-genio-power-management-automated
