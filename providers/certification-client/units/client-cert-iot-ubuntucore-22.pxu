@@ -44,10 +44,10 @@ nested_part:
   cpu-manual
   disk-manual
   ethernet-manual
+  led-indicator-manual
   led-manual
   mediacard-manual
   memory-manual
-  monitor-manual
   networking-manual
   rtc-manual
   serial-manual
@@ -65,7 +65,7 @@ nested_part:
   after-suspend-audio-manual
   after-suspend-bluetooth-manual
   after-suspend-ethernet-manual
-  after-suspend-monitor-manual
+  after-suspend-led-indicator-manual
   after-suspend-networking-manual
   after-suspend-serial-manual
   after-suspend-socketcan-manual-remote
@@ -116,17 +116,16 @@ nested_part:
   cpu-automated
   disk-automated
   docker-automated
+  eeprom-automated
   ethernet-automated
   i2c-automated
   gpio-automated
-  kernel-security-automated
   kernel-snap-automated
-  location-automated
   mediacard-automated
   memory-automated
-  # monitor-automated
   networking-automated
   power-automated
+  rtc-automated
   serial-automated
   snappy-snap-automated
   socketcan-auto-local
@@ -141,9 +140,10 @@ nested_part:
   zapper-enabled-automated
   after-suspend-audio-automated
   after-suspend-bluez-automated
+  after-suspend-eeprom-automated
   after-suspend-ethernet-automated
   after-suspend-gpio-automated
-  after-suspend-location-automated
+  after-suspend-rtc-automated
   after-suspend-serial-automated
   after-suspend-usb-automated
   after-suspend-wireless-automated
