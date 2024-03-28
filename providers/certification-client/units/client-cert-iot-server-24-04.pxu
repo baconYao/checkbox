@@ -32,7 +32,6 @@ include:
 nested_part:
   # until there is reason to diverge, nest these plans
   client-cert-iot-ubuntucore-24-automated
-  ## snappy-snap-automated-lightweight ??
 
 
 id: client-cert-iot-server-24-04-stress

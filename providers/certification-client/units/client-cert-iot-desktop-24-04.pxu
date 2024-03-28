@@ -1,0 +1,66 @@
+id: client-cert-iot-desktop-24-04
+_name: IoT Client Certification for 24.04 classic images
+unit: test plan
+_description:
+  This is classic 24.04
+include:
+nested_part:
+  client-cert-iot-desktop-24-04-manual
+  client-cert-iot-desktop-24-04-automated
+
+
+id: client-cert-iot-desktop-24-04-manual
+_name: IoT Client Certification for 24.04 classic desktop images (Manual Tests)
+unit: test plan
+_description:
+  This is classic 24.04
+include:
+nested_part:
+  # until there is reason to diverge, nest these plans
+  bluetooth-cert-manual
+  monitor-integrated-gpu-cert-manual
+  graphics-integrated-gpu-cert-manual
+  graphics-discrete-gpu-cert-manual
+  monitor-discrete-gpu-cert-manual
+  misc-client-cert-manual
+  touchscreen-cert-manual
+  client-cert-iot-server-24-manual
+  after-suspend-bluetooth-cert-manual
+  after-suspend-graphics-discrete-gpu-cert-manual
+  after-suspend-monitor-discrete-gpu-cert-manual
+  after-suspend-graphics-integrated-gpu-cert-manual
+  after-suspend-monitor-integrated-gpu-cert-manual
+  after-suspend-touchscreen-cert-manual
+
+
+id: client-cert-iot-desktop-24-04-automated
+_name: IoT Client Certification for 24.04 classic desktop images (Automated Tests)
+unit: test plan
+_description:
+  This is classic 24.04
+include:
+nested_part:
+  # until there is reason to diverge, nest these plans
+  mobilebroadband-cert-automated
+  monitor-integrated-gpu-cert-automated
+  graphics-integrated-gpu-cert-automated
+  graphics-discrete-gpu-cert-automated
+  monitor-discrete-gpu-cert-automated
+  misc-client-cert-automated
+  client-cert-iot-server-24-automated
+  after-suspend-mobilebroadband-cert-automated
+  after-suspend-graphics-discrete-gpu-cert-automated
+  # after-suspend-monitor-discrete-gpu-cert-automated # not defined
+  # Now we ask to switch to the integrated graphics card.
+  after-suspend-graphics-integrated-gpu-cert-automated
+  # after-suspend-monitor-integrated-gpu-cert-automated # not defined
+
+
+id: client-cert-iot-desktop-24-04-stress
+_name: IoT Client Certification for 24.04 classic desktop images (Stress Tests)
+unit: test plan
+_description:
+  This is classic 24.04
+include:
+nested_part:
+  stress-full
