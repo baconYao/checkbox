@@ -88,6 +88,10 @@ unit: test plan
 _description:
   This is UC24
 include:
+  disk/encryption/check-fde-tpm
+  disk/encryption/detect
+  image/model-grade
+  miscellanea/secure_boot_mode_.*
 mandatory_include:
   com.canonical.plainbox::manifest
   executable
