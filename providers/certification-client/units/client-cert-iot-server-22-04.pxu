@@ -19,7 +19,7 @@ nested_part:
   # until there is reason to diverge, nest these plans
   client-cert-iot-ubuntucore-22-manual
 exclude:
-  ubuntucore/.*
+  ubuntucore/os-.*
   snappy/os-.*
 
 
@@ -33,8 +33,7 @@ nested_part:
   # until there is reason to diverge, nest these plans
   client-cert-iot-ubuntucore-22-automated
   ## snappy-snap-automated-lightweight ??
-exclude:
-  kernel-snap/booted-kernel-matches-current-.*
+
 
 id: client-cert-iot-server-22-04-stress
 _name: IoT Client Certification for 22.04 classic images (Stress Tests)
